@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/LightGrey"
+    android:id="@+id/RelativeLayout1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btnInspiration"
+        android:text="INSPIRATION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTopThree"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/btnInspiration"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="TOP 3"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rlVeldin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topMarginLayout"
+        android:layout_below="@id/btnInspiration"
+        android:background="@color/White"
+        android:layout_marginLeft="@dimen/leftMarginLayout"
+        android:layout_marginRight="@dimen/rightMarginLayout">
+        <ImageView
+            android:id="@+id/ivVeldinKaric"
+            android:layout_width="@dimen/imageWidth"
+            android:layout_height="@dimen/imageHeight"
+            android:layout_marginLeft="@dimen/imageMarginLeft"
+            android:src="@drawable/veldin_karic"
+            />
+        <TextView
+            android:id="@+id/tvVeldinKaric"
+            android:layout_marginTop="@dimen/topMarginText"
+            android:layout_toRightOf="@id/ivVeldinKaric"
+            android:layout_marginLeft="@dimen/leftMarginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veldin Karić"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvVeldinGodinaRodenja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivVeldinKaric"
+            android:layout_marginLeft="@dimen/leftMarginText"
+            android:text="1973. - /"
+            android:layout_below="@+id/tvVeldinKaric"
+            />
+        <TextView
+            android:id="@+id/tvVeldinDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivVeldinKaric"
+            android:layout_below="@id/tvVeldinGodinaRodenja"
+            android:layout_marginLeft="@dimen/leftMarginText"
+            android:text="Hrvatski je nogometaš. Trenutačno igra za NK Drava Kuršanec."
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlCRonaldo"
+        android:layout_below="@id/rlVeldin"
+        android:background="@color/White"
+        android:layout_marginTop="@dimen/topMarginLayout"
+        android:layout_marginLeft="@dimen/leftMarginLayout"
+        android:layout_marginRight="@dimen/rightMarginLayout"
+        >
+
+        <ImageView
+            android:id="@+id/ivCRonaldo"
+            android:layout_width="@dimen/imageWidth"
+            android:layout_height="@dimen/imageHeight"
+            android:src="@drawable/c_ronaldo"
+            android:layout_marginLeft="@dimen/imageMarginLeft"
+            />
+
+        <TextView
+            android:id="@+id/tvNameRonaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topMarginText"
+            android:layout_toRightOf="@+id/ivCRonaldo"
+            android:layout_marginLeft="@dimen/leftMarginText"
+            android:text="Cristiano Ronaldo dos Santos Aveiro"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvcRonaldoGodRodenja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1985. - /"
+            android:layout_toRightOf="@id/ivCRonaldo"
+            android:layout_below="@id/tvNameRonaldo"
+            android:layout_marginLeft="@dimen/leftMarginText"
+            />
+        <TextView
+            android:id="@+id/tvCRDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivCRonaldo"
+            android:layout_below="@+id/tvcRonaldoGodRodenja"
+            android:layout_marginLeft="@dimen/leftMarginText"
+            android:textStyle="bold"
+            android:text="Portugalski nogometaš, član je torinskog Juventusa."
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlModric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:layout_below="@id/rlCRonaldo"
+        android:layout_marginTop="@dimen/topMarginLayout"
+        android:layout_marginLeft="@dimen/leftMarginLayout"
+        android:layout_marginRight="@dimen/rightMarginLayout">
+
+        <ImageView
+            android:id="@+id/ivModric"
+            android:layout_width="@dimen/imageWidth"
+            android:layout_height="@dimen/imageHeight"
+            android:layout_marginLeft="@dimen/imageMarginLeft"
+            android:src="@drawable/luka_modric"
+            />
+        <TextView
+            android:id="@+id/tvModric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivModric"
+            android:layout_marginTop="@dimen/topMarginText"
+            android:layout_marginLeft="@dimen/leftMarginText"
+            android:text="Luka Modrić"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvModricGodRod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivModric"
+            android:layout_below="@+id/tvModric"
+            android:layout_marginLeft="@dimen/leftMarginText"
+            android:text="1985. - /"
+            />
+        <TextView
+            android:id="@+id/tvModricDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivModric"
+            android:layout_below="@id/tvModricGodRod"
+            android:layout_marginLeft="@dimen/leftMarginText"
+            android:textStyle="bold"
+            android:text="Kapetan hrvatske reprezentacije, trenutno igra za Real Madrid."
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_below="@+id/rlModric"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/topMarginLayout"
+        android:layout_marginLeft="@dimen/leftMarginLayout"
+        android:layout_marginRight="@dimen/rightMarginLayout"
+        >
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnEnter"
+            android:hint="Enter description:"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/btnEnter"
+            android:text="Enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            />
+        <RadioButton
+            android:id="@+id/rbVeldin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etDescription"
+            android:text="Veldin Karic"
+            />
+        <RadioButton
+            android:id="@+id/rbCRonaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rbVeldin"
+            android:text="Cristiano Ronaldo"
+            android:layout_below="@id/etDescription"
+            />
+        <RadioButton
+            android:id="@+id/rbModric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etDescription"
+            android:layout_toRightOf="@+id/rbCRonaldo"
+            android:text="Luka Modric"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

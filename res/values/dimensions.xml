@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageHeight">100dp</dimen>
+    <dimen name="imageWidth">120dp</dimen>
+    <dimen name="imageMarginLeft">20dp</dimen>
+    <dimen name="leftMarginLayout">10dp</dimen>
+    <dimen name="rightMarginLayout">10dp</dimen>
+    <dimen name="topMarginLayout">35dp</dimen>
+    <dimen name="leftMarginText">10dp</dimen>
+    <dimen name="topMarginText">18dp</dimen>
+    <dimen name="leftMarginRadioButton">25dp</dimen>
+</resources>
